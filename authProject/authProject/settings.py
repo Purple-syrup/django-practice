@@ -130,5 +130,8 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'static')
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-purplesyrup-djangopract-62was7s8e2u.ws-eu51.gitpod.io/register','https://*.127.0.0.1/register', 'http://1.1']
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+LOGIN_REDIRECT_URL = 'home'
